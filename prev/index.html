@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="blue">ONE</section>
+      <section class="green">TWO</section>
+      <section class="red">
+        <div class="projects">
+          <div class="title-container">
+            <div class="middle"></div>
+            <h1 class="front reveal">PROJECTS</h1>
+            <h1 class="back reveal">PROJECTS</h1>
+          </div>
+        </div>
+      </section>
+      <section class="gray">
+        <section>
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path
+              id="circlePath"
+              fill="none"
+              stroke-width="4"
+              stroke="hsl(0 100% 50% / 0.5)"
+              d="
+                M 10, 50
+                a 40,40 0 1,1 80,0
+                a 40,40 0 1,1 -80,0
+              "
+            />
+            <text
+              id="text"
+              font-family="monospace"
+              font-size="12"
+              font-weight="bold"
+              fill="var(--text-1)"
+            >
+              <textPath id="textPath" href="#circlePath"></textPath>
+            </text>
+          </svg>
+        </section>
+      </section>
+      <section class="orange">FOUR</section>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
