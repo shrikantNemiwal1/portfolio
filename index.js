@@ -240,3 +240,18 @@ document.querySelectorAll(".navbar span").forEach((button) => {
     cursorFollowerDot.style.transform = "scale(1)";
   });
 });
+
+const svg = `<svg class="arrow-link" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon fill-rule="evenodd" points="19 6.414 5.707 19.707 4.293 18.293 17.586 5 10 5 10 3 21 3 21 14 19 14"/></svg>`;
+
+document.querySelectorAll(".footer-social span").forEach((button) => {
+  button.addEventListener("mouseover", () => {
+    cursorFollower.style.opacity = 0;
+    cursorFollowerDot.innerHTML = svg;
+    cursorFollowerDot.style.transform = "scale(10)";
+  });
+  button.addEventListener("mouseleave", () => {
+    cursorFollower.style.opacity = 1;
+    cursorFollowerDot.innerHTML = "";
+    cursorFollowerDot.style.transform = "scale(1)";
+  });
+});
