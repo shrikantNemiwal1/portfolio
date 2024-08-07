@@ -9,15 +9,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
   </head>
   <body>
-    <span id="cursorFollower" class="cursorFollower"></span>
-    <span id="cursorFollowerDot" class="cursorFollowerDot"></span>
+    <div class="cursorFollower" id="cursorFollower"></div>
+    <div class="cursorDot" id="cursorDot"></div>
     <button class="dark-mode-btn" id="themeBtn"></button>
     <span class="dark-mode" id="themeProvider"></span>
     <div class="navbar">
-      <span>Projects</span>
-      <!-- <span>Work</span> -->
-      <span>About Me</span>
-      <span>Contacts</span>
+      <a href="#about">
+        <span>ABOUT</span>
+      </a>
+      <a href="#projects">
+        <span>PROJECTS</span>
+      </a>
+      <a href="#contact">
+        <span>CONTACT</span>
+      </a>
     </div>
     <section class="hero">
       <span class="logo">
@@ -42,35 +47,70 @@
         </svg>
       </span>
       <div class="content-container" id="heroContent">
-        <h1 class="hero-main hero-content">
-          <span class="span">I TURN </span>
-        </h1>
-        <h1 class="hero-main hero-content">
-          <span class="span"
-            >IDEAS INTO <span class="span2 span-left">SHRIKANT</span></span
-          >
-        </h1>
-        <h1 class="hero-main hero-content">
-          <span class="span"
-            >CODE<span class="span2 span-left">NEMIWAL</span></span
-          >
-        </h1>
+        <ul class="hero-texts" id="hero-texts">
+          <li>
+            <span class="hero-text">
+              <span class="menu-item">HI! I AM</span>
+              <span aria-hidden="true" class="menu-item-active">I TURN</span>
+            </span>
+          </li>
+          <li>
+            <span class="hero-text">
+              <span class="menu-item">SHRIKANT</span>
+              <span aria-hidden="true" class="menu-item-active"
+                >IDEAS INTO</span
+              >
+            </span>
+          </li>
+          <li>
+            <span class="hero-text">
+              <span class="menu-item">NEMIWAL</span>
+              <span aria-hidden="true" class="menu-item-active">CODE</span>
+            </span>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="project-container">
-      <h1 class="projects back">PROJECTS</h1>
-      <div class="image">
-        <video autoplay loop muted poster="project1.webm">
-          <source type="video/webm" src="project1.webm" />
-        </video>
+      <h1 class="projects" id="about">#ABOUT</h1>
+      <!-- <img class="about-image" src="./assets/image.jpg" alt="" /> -->
+      <h1 class="about-para">
+        I’m a Full Stack Web developer specializing in the MERN stack and a
+        student at NIT Bhopal. I’m passionate about creating efficient,
+        user-friendly applications.
+      </h1>
+    </section>
+    <section class="project-container">
+      <h1 class="projects" id="projects">#PROJECTS</h1>
+
+      <div class="project-list">
+        <a href="https://codespaces.online">
+          <div class="image">
+            <video loop muted poster="project2.webp">
+              <source type="video/webm" src="project2.webm" />
+            </video>
+            <h1 class="project-index">01</h1>
+          </div>
+        </a>
+        <a href="">
+          <div class="image">
+            <video loop muted poster="project3.webp">
+              <source type="video/webm" src="project3.webm" />
+            </video>
+            <h1 class="project-index">02</h1>
+          </div>
+        </a>
+        <a href="">
+          <div class="image">
+            <video loop muted poster="project1.webm">
+              <source type="video/webm" src="project1.webm" />
+            </video>
+            <h1 class="project-index">03</h1>
+          </div>
+        </a>
       </div>
-      <h1 class="projects front">PROJECTS</h1>
-      <h1 class="project-index">01</h1>
     </section>
-    <section class="hero">
-      <h1>Title</h1>
-    </section>
-    <footer>
+    <footer id="contact">
       <div class="footer-main">
         <span class="footer-logo">
           <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
